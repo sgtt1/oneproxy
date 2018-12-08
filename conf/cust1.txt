@@ -1,0 +1,115 @@
+[
+ {
+       "table"      : "ag_bet_record",
+       "pkey"       : "bet_time",
+       "type"       : "timestamp",
+       "method"     : "range",
+       "partitions":
+          [
+              { "suffix" : "_201509", "group": "shixun", "value" : "2015-10-01 00:00:00" },
+              { "suffix" : "_201510", "group": "shixun", "value" : "2015-11-01 00:00:00" },
+              { "suffix" : "_201511", "group": "shixun", "value" : "2015-12-01 00:00:00" },
+              { "suffix" : "_201512", "group": "shixun", "value" : "2016-01-01 00:00:00" },
+              { "suffix" : "_201601", "group": "shixun", "value" : "2016-02-01 00:00:00" },
+              { "suffix" : "_201602", "group": "shixun", "value" : "2016-03-01 00:00:00" },
+              { "suffix" : "_201603", "group": "shixun", "value" : "2016-04-01 00:00:00" }
+          ]
+ },
+ {
+       "table"      : "bbin_bet_record",
+       "pkey"       : "wagers_date",
+       "type"       : "timestamp",
+       "method"     : "range",
+       "partitions":
+          [
+              { "suffix" : "_201509", "group": "shixun", "value" : "2015-10-01 00:00:00" },
+              { "suffix" : "_201510", "group": "shixun", "value" : "2015-11-01 00:00:00" },
+              { "suffix" : "_201511", "group": "shixun", "value" : "2015-12-01 00:00:00" },
+              { "suffix" : "_201512", "group": "shixun", "value" : "2016-01-01 00:00:00" },
+              { "suffix" : "_201601", "group": "shixun", "value" : "2016-02-01 00:00:00" },
+              { "suffix" : "_201602", "group": "shixun", "value" : "2016-03-01 00:00:00" },
+              { "suffix" : "_201603", "group": "shixun", "value" : "2016-04-01 00:00:00" }
+          ]
+ },
+ {
+       "table"      : "ct_bet_record",
+       "pkey"       : "transaction_date_time",
+       "type"       : "timestamp",
+       "method"     : "range",
+       "partitions":
+          [
+              { "suffix" : "_201509", "group": "shixun", "value" : "2015-10-01 00:00:00" },
+              { "suffix" : "_201510", "group": "shixun", "value" : "2015-11-01 00:00:00" },
+              { "suffix" : "_201511", "group": "shixun", "value" : "2015-12-01 00:00:00" },
+              { "suffix" : "_201512", "group": "shixun", "value" : "2016-01-01 00:00:00" },
+              { "suffix" : "_201601", "group": "shixun", "value" : "2016-02-01 00:00:00" },
+              { "suffix" : "_201602", "group": "shixun", "value" : "2016-03-01 00:00:00" },
+              { "suffix" : "_201603", "group": "shixun", "value" : "2016-04-01 00:00:00" }
+          ]
+ },
+ {
+       "table"      : "lebo_bet_record",
+       "pkey"       : "betstart_time",
+       "type"       : "timestamp",
+       "method"     : "range",
+       "partitions":
+          [
+              { "suffix" : "_201509", "group": "shixun", "value" : "2015-10-01 00:00:00" },
+              { "suffix" : "_201510", "group": "shixun", "value" : "2015-11-01 00:00:00" },
+              { "suffix" : "_201511", "group": "shixun", "value" : "2015-12-01 00:00:00" },
+              { "suffix" : "_201512", "group": "shixun", "value" : "2016-01-01 00:00:00" },
+              { "suffix" : "_201601", "group": "shixun", "value" : "2016-02-01 00:00:00" },
+              { "suffix" : "_201602", "group": "shixun", "value" : "2016-03-01 00:00:00" },
+              { "suffix" : "_201603", "group": "shixun", "value" : "2016-04-01 00:00:00" }
+          ]
+ },
+ {
+       "table"      : "mg_bet_record",
+       "pkey"       : "date",
+       "type"       : "timestamp",
+       "method"     : "range",
+       "partitions":
+          [
+              { "suffix" : "_201509", "group": "shixun", "value" : "2015-10-01 00:00:00" },
+              { "suffix" : "_201510", "group": "shixun", "value" : "2015-11-01 00:00:00" },
+              { "suffix" : "_201511", "group": "shixun", "value" : "2015-12-01 00:00:00" },
+              { "suffix" : "_201512", "group": "shixun", "value" : "2016-01-01 00:00:00" },
+              { "suffix" : "_201601", "group": "shixun", "value" : "2016-02-01 00:00:00" },
+              { "suffix" : "_201602", "group": "shixun", "value" : "2016-03-01 00:00:00" },
+              { "suffix" : "_201603", "group": "shixun", "value" : "2016-04-01 00:00:00" }
+          ]
+ },
+ {
+       "table"      : "og_bet_record",
+       "pkey"       : "add_time",
+       "type"       : "timestamp",
+       "method"     : "range",
+       "partitions":
+          [
+              { "suffix" : "_201506", "group": "shixun", "value" : "2015-07-01 00:00:00" },
+              { "suffix" : "_201507", "group": "shixun", "value" : "2015-08-01 00:00:00" },
+              { "suffix" : "_201508", "group": "shixun", "value" : "2015-09-01 00:00:00" },
+              { "suffix" : "_201509", "group": "shixun", "value" : "2015-10-01 00:00:00" },
+              { "suffix" : "_201510", "group": "shixun", "value" : "2015-11-01 00:00:00" },
+              { "suffix" : "_201511", "group": "shixun", "value" : "2015-12-01 00:00:00" },
+              { "suffix" : "_201512", "group": "shixun", "value" : "2016-01-01 00:00:00" },
+              { "suffix" : "_201601", "group": "shixun", "value" : "2016-02-01 00:00:00" },
+              { "suffix" : "_201602", "group": "shixun", "value" : "2016-03-01 00:00:00" },
+              { "suffix" : "_201603", "group": "shixun", "value" : "2016-04-01 00:00:00" }
+          ]
+ },
+ {
+       "table"      : "pt_bet_record",
+       "pkey"       : "GameDate",
+       "type"       : "timestamp",
+       "method"     : "range",
+       "partitions":
+          [
+              { "suffix" : "_201512", "group": "shixun", "value" : "2016-01-01 00:00:00" },
+              { "suffix" : "_201601", "group": "shixun", "value" : "2016-02-01 00:00:00" },
+              { "suffix" : "_201602", "group": "shixun", "value" : "2016-03-01 00:00:00" },
+              { "suffix" : "_201603", "group": "shixun", "value" : "2016-04-01 00:00:00" }
+          ]
+ }
+]
+

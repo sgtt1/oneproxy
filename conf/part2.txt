@@ -1,0 +1,15 @@
+[
+   {
+        "table"   : "TB_TESTTRACE",
+        "pkey"    : "SFBM",
+        "type"    : "char",
+        "method"  : "hash",
+        "partitions":
+           [
+               { "suffix" : "_0", "group": "data1" },
+               { "suffix" : "_1", "group": "data1" },
+               { "suffix" : "_2", "group": "data1" },
+               { "suffix" : "_3", "group": "data1" }
+	   ]
+   }
+]

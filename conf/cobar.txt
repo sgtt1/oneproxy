@@ -1,0 +1,22 @@
+[
+  {
+        "table"      : "corba_demo",
+        "pkey"       :
+                [
+                    { "name":"id", "start":1, "end": 4, "mod": 1024, "func":"cobar" }
+                ],
+        "type"       : "int",
+        "method"     : "range",
+        "partitions" : 
+	        [
+		     { "db" : "schema1", "suffix" : "", "group" : "server1", "value" :  "128" },
+		     { "db" : "schema2", "suffix" : "", "group" : "server1", "value" :  "256" },
+		     { "db" : "schema3", "suffix" : "", "group" : "server1", "value" :  "384" },
+		     { "db" : "schema4", "suffix" : "", "group" : "server1", "value" :  "512" },
+		     { "db" : "schema5", "suffix" : "", "group" : "server1", "value" :  "640" },
+		     { "db" : "schema6", "suffix" : "", "group" : "server1", "value" :  "768" },
+		     { "db" : "schema7", "suffix" : "", "group" : "server1", "value" :  "896" },
+		     { "db" : "schema8", "suffix" : "", "group" : "server1", "value" : "1024" }
+                ]
+  }
+]

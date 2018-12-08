@@ -1,0 +1,7 @@
+2017-10-28 09:46:41: (critical) plugin oraproxy 6.1.5 (Oct 27 2017) started
+2017-10-28 09:46:41: (critical) Max Open File-descriptors = 65535
+2017-10-28 09:46:41: (critical) /proc/sys/net/ipv4/tcp_tw_reuse = 0, value 1 is suggested!
+2017-10-28 09:46:41: (critical) /proc/sys/net/ipv4/tcp_tw_recycle = 0, value non-zero is suggested!
+2017-10-28 09:46:41: (critical) Enterprise Register Code = JVLV-ZRLB-XTYH-XHLF-GHPF
+2017-10-28 09:46:41: (critical) valid config checksum = 151845295
+2017-10-28 09:46:41: (critical) Welcome to OneProxy Comminity Edition!

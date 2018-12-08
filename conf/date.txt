@@ -1,0 +1,18 @@
+[
+  {
+        "table"      : "my_date",
+        "version"    : 2,
+        "pkey"       : "id",
+        "type"       : "timestamp",
+        "method"     : "range",
+        "partitions":
+           [
+               { "db":"test", "suffix" : "_1601", "group": "server1", "value" : "2016/02/01" },
+               { "db":"test", "suffix" : "_1602", "group": "server1", "value" : "2016/03/01" },
+               { "db":"test", "suffix" : "_1603", "group": "server1", "value" : "2016/04/01" },
+               { "db":"test", "suffix" : "_1604", "group": "server1", "value" : "2016/05/01" },
+               { "db":"test", "suffix" : "_1701", "group": "server1", "value" : "2017/02/01" }
+           ]
+  }
+]
+

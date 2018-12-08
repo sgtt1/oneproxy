@@ -1,0 +1,139 @@
+[
+  { "table" : "my_range2", "pkey" : "id", "subpkey" : "col2", "template" : "range" },
+  { "table" : "my_range",  "pkey" : "id", "subpkey" : "col2", "template" : "range" },
+  {
+        "table"      : "my_hash",
+        "pkey"       : "id",
+        "type"       : "int",
+        "method"     : "hash",
+        "partitions" : 256,
+	"groups"     : [ "default" ]
+  },
+  {
+        "table"      : "t_objects",
+        "pkey"       : "object_id",
+        "type"       : "int",
+        "method"     : "hash",
+        "partitions" : 8,
+        "groups"     : [ "server1" ]
+  },
+  {
+        "table"      : "sbtest1",
+        "pkey"       : "id",
+        "type"       : "int",
+        "method"     : "hash",
+        "partitions" : 128,
+        "groups"     : [ "server1" ]
+  },
+  {
+        "table"        : "mycat",
+	"mycat_count"  : 128,
+        "pkey"         : "mycat:id",
+        "type"         : "int",
+        "method"       : "hash",
+        "partitions"   : 128,
+        "groups"       : [ "server1" ]
+  },
+  {
+        "table"      : "my_datehash",
+        "pkey"       : "id",
+        "type"       : "date",
+        "method"     : "hash",
+	"keypos"     : 2,
+        "partitions" : 4,
+        "groups"     : [ "server1" ]
+  },
+  {
+        "table"      : "my_date",
+	"version"    : 3,
+        "pkey"       : "id",
+        "type"       : "timestamp",
+        "method"     : "range",
+        "partitions":
+           [
+               { "suffix" : "_1601", "group": "server1", "value" : "2016/02/01" },
+               { "db":"test", "suffix" : "_1602", "group": "server1", "value" : "2016/03/01" },
+               { "db":"test", "suffix" : "_1603", "group": "server1", "value" : "2016/04/01" },
+               { "db":"test", "suffix" : "_1604", "group": "server1", "value" : "2016/05/01" }
+           ]
+  },
+  {
+        "table"   : "my_list",
+        "pkey"    : "id",
+        "type"    : "int",
+        "method"  : "list",
+        "partitions":
+           [
+               { "suffix" : "_0", "group": "default", "value" : [1,2,3] },
+               { "suffix" : "_1", "group": "default", "value" : [4,5,6] },
+               { "suffix" : "_2", "group": "default", "value" : [7,8,9] },
+               { "suffix" : "_3", "group": "default", "value" : [10,11,12] },
+	       { "suffix" : "_4", "group": "default", "value" : [] }
+           ]
+  },
+  {
+        "table"      : "my_global",
+        "pkey"       : "id",
+        "type"       : "char",
+        "method"     : "global",
+        "partitions" : 2,
+        "groups"     : [ "server1", "server2" ]
+  },
+  {
+        "table"      : "user_info",
+        "pkey"       :
+                [
+                    { "name":"user_id", "start":-3, "end": -1}
+                ],
+        "type"       : "int",
+        "method"     : "hash",
+        "partitions" : 16,
+        "groups"     : [ "userdb01", "userdb02", "userdb03", "userdb04" ]
+  },
+  {
+        "table"         : "user_trade",
+        "pkey"          :
+		[
+		    { "name":"user_id", "start":-3, "end": -1},
+		    { "name":"trade_no", "start":9, "end":10 }
+		],
+        "type"          : "int",
+        "method"        : "hash",
+        "partitions"    : 16,
+        "groups"        : [ "userdb01", "userdb02", "userdb03", "userdb04" ],
+        "subpkey"       :
+		[
+		     { "name":"create_time"},
+		     { "name":"trade_no", "start":1, "end":8 }
+		],
+        "subtype"       : "timestamp",
+        "submethod"     : "range",
+        "subpartitions" :
+           [
+               { "suffix" : "_16Q1", "value" : "2016/04/01" },
+               { "suffix" : "_16Q2", "value" : "2016/07/01" },
+               { "suffix" : "_16Q3", "value" : "2016/10/01" },
+               { "suffix" : "_16Q4", "value" : "2017/01/01" }
+           ]
+   },
+   {
+        "table"   : "my_global2",
+        "pkey"    : "id",
+        "type"    : "int",
+        "method"  : "global",
+        "partitions":
+           [
+               {  "group": "server1" },
+               {  "db":"data2", "group": "server1" }
+           ]
+   },
+   {
+        "table"      : "my_hash3",
+        "pkey"       : "id",
+        "type"       : "int",
+        "method"     : "hash",
+        "partitions" : 5,
+        "groups"     : [ "sg1", "sg2","sg3","sg4","sg5" ]
+   }
+]
+
